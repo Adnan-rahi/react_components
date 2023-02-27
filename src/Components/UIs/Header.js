@@ -7,6 +7,7 @@ import { AiOutlineSearch } from "react-icons/ai";
 
 function Header() {
   return (
+    <div>
     <nav className="border-b-2 border-t-2 border-gray-200  sm:px-4 rounded dark:bg-gray-900 mt-2">
       <div className="container flex flex-wrap justify-between mx-auto py-3">
         <div className="flex flex-row">
@@ -40,6 +41,7 @@ function Header() {
         </ul>
       </div>
     </nav>
+    </div>
   );
 }
 

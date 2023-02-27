@@ -1,6 +1,6 @@
 export default function InputsDoc() {
   return (
-    <div className="container mx-auto p-2 w-2/4 font-serif">
+    <div className="p-2 font-serif">
       <h1 className="text-3xl font-bold pt-10 pb-2">
         Tailwind CSS Input Field - Flowbite
       </h1>

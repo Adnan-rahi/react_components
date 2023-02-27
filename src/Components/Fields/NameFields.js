@@ -15,7 +15,7 @@ const NameFields = () => {
   };
 
   return (
-    <div className="container mx-auto p-2 w-2/4 font-serif">
+    <div className="p-2 font-serif">
       <div className="mb-6">
         <label
           htmlFor="first_name"
