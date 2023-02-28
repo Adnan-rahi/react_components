@@ -2,35 +2,37 @@ import InputsDoc from "../Fields/InputsDoc";
 import NameFields from "../Fields/NameFields";
 import PhoneNumber from "../Fields/PhoneNumber";
 import Emailfield from "../Fields/Emailfield";
-import PasswordField from "../Fields/PasswordField";
 import WebsiteField from "../Fields/WebsiteField";
 
-import React, {useState} from "react";
+import React, { useState } from "react";
+import Header from "./Header";
 
 const Center = () => {
-    const  [changeLabel, setChangeLabel] = useState("");
+  const [text, setText] = useState("https://");
 
-  function handleChangePassword() {
-    setChangeLabel("This is a props pass from parent to child component")
+  
+
+  function handleChange(e) {
+    setText(e.target.value);
   }
 
   return (
     <div>
+      <Header />
       <InputsDoc />
       <NameFields />
       <PhoneNumber />
       <Emailfield
+        changeLabel="Your Email Address"
         placeholder="Enter your Email address"
-        changeLabel="The Label change using props"
         backgroundColor="green"
       />
-      <PasswordField
-        diff="Password"
-        change={(e) => {
-          handleChangePassword({changeLabel});
-        }}
+     
+      <WebsiteField
+        text={text}
+        setValueCallback={setText}
+        onChange={handleChange}
       />
-      <WebsiteField backgroundColor="blue" />
     </div>
   );
 };

@@ -1,26 +1,22 @@
 import Sidebar from "../Components/UIs/Sidebar";
 
-//------------------------------------------------------
-// main Container
 import Center from "../Components/UIs/Center";
 
-//------------------------------------------------------------
-// Right SideBar 
-import RightSideBar from "../Components/UIs/RightSideBar"; 
-
-
+import RightSideBar from "../Components/UIs/RightSideBar";
 
 const Layout = () => {
   return (
     <div className="flex flex-row">
       <div className="w-64">
-         <Sidebar />
-       </div>
+        <Sidebar />
+      </div>
       <div className=" w-3/4">
         <Center />
       </div>
       <div className="w-1/4">
-        <p><RightSideBar /></p>
+        <p>
+          <RightSideBar />
+        </p>
       </div>
     </div>
   );
