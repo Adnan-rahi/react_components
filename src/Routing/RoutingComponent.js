@@ -1,26 +1,23 @@
-import {BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Center from "../Components/UIs/Center";
+
+import { Routes, Route } from "react-router-dom";
 import LandingLayout from "../Layouts/LandingLayout";
-import Emailfield from "../Components/Fields/Emailfield";
-import PasswordField from "../Components/Fields/PasswordField";
-import Header from "../Components/UIs/Header";
-import ComponentLayout from "../Layouts/ComponentLayout"
-import WebsiteField from "../Components/Fields/WebsiteField";
+import Center from "../Pages/Center";
+import Emailfield from "../Components/Inputs-Fields/Emailfield";
+import PasswordField from "../Components/Inputs-Fields/PasswordField";
+import ComponentLayout from "../Layouts/ComponentLayout";
+import WebsiteField from "../Components/Inputs-Fields/WebsiteField";
 
 
 export default function RoutingComponent() {
+  return (
 
-    return (
-        <Router>
-        <Routes>
+      <Routes>
         <Route exact path="/" element={<LandingLayout />} />
-        <Route exact path="/Header" element={<Header />} />
         <Route exact path="/Components" element={<ComponentLayout />} />
-        <Route exact path="/Email" element={<Emailfield />} />
+        <Route exact path="/Components/Inputs-Fields/Emailfield" element={<Emailfield />} />
         <Route exact path="/password" element={<PasswordField />} />
-        <Route exact path="/Website" element={<WebsiteField />} />
-        <Route exact path="/Center" element={<Center />} />
-        </Routes>
-        </Router>
-    );
+      <Route exact path="/Center" element={<Center />} />
+      <Route exact path="/Website" element={<WebsiteField />} />
+      </Routes>
+  );
 }

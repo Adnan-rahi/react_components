@@ -9,13 +9,13 @@ function Header() {
           {/* <AiFillPlayCircle className="text-5xl text-blue-500" /> */}
           <img
             src="https://images.unsplash.com/photo-1668933182157-812dfdfe6b3d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-            className="w-10 h-10 rounded-full mt-4 mr-2"
+            className="w-10 h-10 rounded-full mt-2 mr-2"
             alt="Logo"
           />
           <Link to="/" >
           <h1 className="font-semibold whitespace-nowrap dark:text-whit text-2xl my-2">
-            Control
-            <p className="text-sm ml-3 italic text-blue-500">The inputs</p>
+            Swati
+            
           </h1>
             </Link>
         </div>

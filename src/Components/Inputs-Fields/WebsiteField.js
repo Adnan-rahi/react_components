@@ -4,9 +4,12 @@ function WebsiteField(props) {
   // }
   return (
     <div className="p-2 mb-6">
-      <label htmlFor="Website" className="block">Website Url</label>
+      <label htmlFor="Website" className="block">
+        Website Url
+      </label>
       <input
         type="url"
+        children={props.children}
         value={props.text}
         onChange={props.onChange}
         placeholder="https://www.website.com"

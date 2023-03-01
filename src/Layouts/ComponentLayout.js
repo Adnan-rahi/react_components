@@ -1,8 +1,8 @@
-import Sidebar from "../Components/UIs/Sidebar";
+import Sidebar from "../Pages/Sidebar";
 
-import Center from "../Components/UIs/Center";
+import Center from "../Pages/Center";
 
-import RightSideBar from "../Components/UIs/RightSideBar";
+import RightSideBar from "../Pages/Sidebar";
 
 const Layout = () => {
   return (

@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <>
       <footer
-        className="bg-dark-grey w-screen  
+        className="bg-dark-grey mt-10  
       flex justify-center
      p-10 border-t-2 border-gray-200"
       >
