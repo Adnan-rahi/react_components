@@ -6,18 +6,16 @@ function Header() {
     <nav className="border-b-2 border-t-2 border-gray-200  sm:px-4 rounded dark:bg-gray-900 mt-2">
       <div className="container flex flex-wrap justify-between mx-auto py-3">
         <div className="flex flex-row">
-          {/* <AiFillPlayCircle className="text-5xl text-blue-500" /> */}
           <img
             src="https://images.unsplash.com/photo-1668933182157-812dfdfe6b3d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
             className="w-10 h-10 rounded-full mt-2 mr-2"
             alt="Logo"
           />
-          <Link to="/" >
-          <h1 className="font-semibold whitespace-nowrap dark:text-whit text-2xl my-2">
-            Swati
-            
-          </h1>
-            </Link>
+          <Link to="/">
+            <h1 className="font-semibold whitespace-nowrap dark:text-whit text-2xl my-2">
+              Swati
+            </h1>
+          </Link>
         </div>
         <div className="relative ">
           <AiOutlineSearch className="text-1xl text-gary-100 absolute top-5 z-10  text-gray-500 left-2" />
@@ -33,17 +31,6 @@ function Header() {
 }
 
 export default Header;
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -89,4 +76,3 @@ export default Header;
     Pricing & FAQ
   </button>
 </ul> */
-

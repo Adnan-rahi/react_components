@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function Documentation() {
   return (
     <>
-      <div className="px-4 mx-auto lg:px-4 lg:text-center my-20">
+      <div className="px-4 mx-auto lg:px-4 lg:text-center my-14">
         <Link to="/Components">
           <h1 className="mb-4 text-2xl font-bold tracking-tight text-gray-900 lg:font-extrabold lg:text-4xl lg:leading-snug dark:text-white lg:text-center 2xl:px-48">
             Swati UI Components

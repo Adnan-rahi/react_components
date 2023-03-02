@@ -1,7 +1,4 @@
 function WebsiteField(props) {
-  // function handleChange(event) {
-  //   props.setValueCallback(event.target.value);
-  // }
   return (
     <div className="p-2 mb-6">
       <label htmlFor="Website" className="block">
@@ -9,7 +6,6 @@ function WebsiteField(props) {
       </label>
       <input
         type="url"
-        children={props.children}
         value={props.text}
         onChange={props.onChange}
         placeholder="https://www.website.com"
